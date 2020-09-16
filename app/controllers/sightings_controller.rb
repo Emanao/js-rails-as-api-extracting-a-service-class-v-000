@@ -7,6 +7,7 @@ class SightingsController < ApplicationController
     #   :location => {:only => [:latitude, :longitude]}
     # },
     # :except => [:updated_at])
+    byebug
     render json: SightingSerializer.new(sightings).to_serialized_json
   end
 
